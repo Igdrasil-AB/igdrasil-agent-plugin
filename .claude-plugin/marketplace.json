@@ -1,0 +1,15 @@
+{
+  "name": "igdrasil",
+  "description": "Igdrasil plugins for Claude Code and Grok Build.",
+  "owner": {
+    "name": "Igdrasil AB",
+    "email": "erik@igdrasil.se"
+  },
+  "plugins": [
+    {
+      "name": "igdrasil",
+      "source": "./",
+      "description": "Swedish BAS accounting from Igdrasil: reports, VAT, open invoices, documents and reconciliation."
+    }
+  ]
+}

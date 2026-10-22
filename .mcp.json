@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "igdrasil": {
+      "type": "http",
+      "url": "https://accounting.igdrasil.se/api/mcp"
+    }
+  }
+}

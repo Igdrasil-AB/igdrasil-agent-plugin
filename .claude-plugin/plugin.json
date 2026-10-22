@@ -1,0 +1,22 @@
+{
+  "name": "igdrasil",
+  "version": "0.1.0",
+  "description": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
+  "author": {
+    "name": "Igdrasil AB",
+    "email": "erik@igdrasil.se",
+    "url": "https://igdrasil.se"
+  },
+  "homepage": "https://igdrasil.se",
+  "repository": "https://github.com/Igdrasil-AB/igdrasil-agent-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "accounting",
+    "bookkeeping",
+    "sweden",
+    "bas",
+    "vat",
+    "invoices",
+    "reconciliation"
+  ]
+}
