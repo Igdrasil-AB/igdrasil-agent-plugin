@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "igdrasil",
+      "name": "igdrasil-bokforing",
       "source": "./",
       "description": "Swedish BAS accounting from Igdrasil: reports, VAT, open invoices, documents and reconciliation."
     }

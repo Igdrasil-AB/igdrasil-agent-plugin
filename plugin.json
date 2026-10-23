@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "igdrasil",
+  "name": "igdrasil-bokforing",
   "version": "0.1.0",
   "description": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
   "author": {
@@ -23,7 +23,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Igdrasil",
+        "displayName": "Igdrasil Bokföring",
         "shortDescription": "Ask about your Swedish books: results, VAT, open invoices, reconciliation.",
         "longDescription": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
         "developerName": "Igdrasil AB",
@@ -35,9 +35,9 @@
         "privacyPolicyURL": "https://igdrasil.se/privacy",
         "termsOfServiceURL": "https://igdrasil.se/terms",
         "defaultPrompt": [
-          "Use Igdrasil to summarise last month's result for my company.",
-          "Use Igdrasil to show my VAT position for this quarter.",
-          "Use Igdrasil to list my open customer invoices."
+          "Use Igdrasil Bokföring to summarise last month's result for my company.",
+          "Use Igdrasil Bokföring to show my VAT position for this quarter.",
+          "Use Igdrasil Bokföring to list my open customer invoices."
         ],
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
