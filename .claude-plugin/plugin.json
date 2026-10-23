@@ -20,5 +20,9 @@
     "invoices",
     "reconciliation"
   ],
-  "privacyPolicyUrl": "https://igdrasil.se/privacy"
+  "privacyPolicyUrl": "https://igdrasil.se/privacy",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://developer.igdrasil.se/mcp-api",
+  "supportUrl": "https://igdrasil.se/kontakt/",
+  "termsOfServiceUrl": "https://igdrasil.se/terms"
 }
