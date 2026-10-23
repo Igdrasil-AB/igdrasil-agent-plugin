@@ -11,6 +11,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MCP_URL = "https://accounting.igdrasil.se/api/mcp"
+# ChatGPT gets every operation as its own tool; OpenAI review rejects the router.
+CHATGPT_MCP_URL = "https://accounting.igdrasil.se/api/mcp/chatgpt"
 NAME = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SECRET = re.compile(r"sk-ant-|sk-[A-Za-z0-9]{20}|ghp_|github_pat_|Bearer [A-Za-z0-9]|CLIENT_SECRET|BEGIN [A-Z ]*PRIVATE KEY")
 
@@ -46,10 +48,13 @@ def check(problems):
     if claude.get("version") != portable.get("version"):
         problems.append("plugin versions differ between .claude-plugin/plugin.json and plugin.json")
 
-    for label, doc in [(".mcp.json", claude_mcp), ("mcp.json", portable_mcp)]:
+    for label, doc, url in [
+        (".mcp.json", claude_mcp, MCP_URL),
+        ("mcp.json", portable_mcp, CHATGPT_MCP_URL),
+    ]:
         server = (doc.get("mcpServers") or {}).get("igdrasil") or {}
-        if server.get("url") != MCP_URL:
-            problems.append(f"{label}: igdrasil url must be {MCP_URL}")
+        if server.get("url") != url:
+            problems.append(f"{label}: igdrasil url must be {url}")
         if "headers" in server:
             problems.append(f"{label}: remote servers must not carry headers")
     if (claude_mcp.get("mcpServers") or {}).get("igdrasil", {}).get("type") != "http":
