@@ -1,6 +1,6 @@
-# Igdrasil Agent Plugin
+# Igdrasil Bokföring
 
-Connects Claude, ChatGPT/Codex and Grok to [Igdrasil](https://igdrasil.se), the
+The Igdrasil Bokföring plugin connects Claude, ChatGPT/Codex and Grok to [Igdrasil](https://igdrasil.se), the
 Swedish BAS accounting platform from Igdrasil AB. You can ask about your
 company's results, VAT position, open invoices, documents and bank
 reconciliation.
@@ -32,10 +32,11 @@ enforces this, and the skills also refuse such requests.
 Claude Code:
 
 ```text
-/plugin install igdrasil --marketplace Igdrasil-AB/igdrasil-agent-plugin
+/plugin marketplace add Igdrasil-AB/igdrasil-agent-plugin
+/plugin install igdrasil-bokforing@igdrasil
 ```
 
-Claude.ai and ChatGPT: add Igdrasil from the connector or plugin directory once
+Claude.ai and ChatGPT: add Igdrasil Bokföring from the connector or plugin directory once
 it is listed there. Until then, add a custom connector with the URL below.
 
 ## Connect

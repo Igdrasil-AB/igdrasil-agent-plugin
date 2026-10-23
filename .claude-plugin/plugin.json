@@ -1,5 +1,6 @@
 {
-  "name": "igdrasil",
+  "name": "igdrasil-bokforing",
+  "displayName": "Igdrasil Bokföring",
   "version": "0.1.0",
   "description": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
   "author": {
@@ -18,5 +19,6 @@
     "vat",
     "invoices",
     "reconciliation"
-  ]
+  ],
+  "privacyPolicyUrl": "https://igdrasil.se/privacy"
 }
