@@ -47,6 +47,11 @@ Hosted MCP endpoint (OAuth with PKCE; your client handles sign-in):
 https://accounting.igdrasil.se/api/mcp
 ```
 
+ChatGPT and Codex use `https://accounting.igdrasil.se/api/mcp/chatgpt`. It
+lists every operation as its own tool and leaves out the search-and-call
+router, which OpenAI's plugin review does not accept. Sign-in and permissions
+are the same on both.
+
 The plugin has no API key, and none is needed.
 
 | Path | Used by |

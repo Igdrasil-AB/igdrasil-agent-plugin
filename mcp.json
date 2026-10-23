@@ -3,7 +3,7 @@
   "mcpServers": {
     "igdrasil": {
       "type": "streamable-http",
-      "url": "https://accounting.igdrasil.se/api/mcp"
+      "url": "https://accounting.igdrasil.se/api/mcp/chatgpt"
     }
   }
 }
