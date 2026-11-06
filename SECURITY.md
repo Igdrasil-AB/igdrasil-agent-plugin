@@ -8,7 +8,7 @@ This is a public repository. Do not add any of the following:
 - `headers`, `Authorization` values or bearer tokens in `.mcp.json` or `mcp.json`
 - environment files, private keys or database credentials
 
-CI enforces this (`scripts/check_package.py`).
+CI enforces this (`.github/workflows/check.yml`).
 
 The hosted MCP server uses OAuth only. An unauthenticated request to
 `https://accounting.igdrasil.se/api/mcp` gets a `401` that points to the
