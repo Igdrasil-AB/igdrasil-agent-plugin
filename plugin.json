@@ -74,10 +74,10 @@
               "expected_behavior": "Shows the balance of each bank account and how many bank transactions are not yet matched to a voucher."
             },
             {
-              "description": "Prepare a voucher for human approval",
+              "description": "Prepare a draft voucher without booking it",
               "prompt": "Prepare a voucher in Igdrasil that moves 1000 SEK from bank account 1930 to cash account 1910, dated today. Don't book it.",
-              "tools_triggered": "igdrasil_list_companies, ledger_post, staged_operations_show",
-              "expected_behavior": "Stages a draft voucher (debit 1910, credit 1930, 1000 SEK) and shows its lines. Says that it is waiting for a person to approve it in the Igdrasil app. The ledger itself does not change."
+              "tools_triggered": "accounting_entries_create",
+              "expected_behavior": "Creates a draft voucher in Igdrasil (debit 1910, credit 1930, 1000 SEK, today's date) and shows its lines. Says that it is only a draft: nothing is booked until a person approves it in the Igdrasil app."
             }
           ],
           "negative": [
@@ -98,6 +98,7 @@
         "commerce": false
       },
       "publication": {
+        "demo_recording_url": "https://drive.google.com/file/d/1CtZ-BEY0pyV6ZtcUWoqu7o6q0Ym2pAFg/view",
         "release_notes": "First release. Read the books of your Swedish companies in Igdrasil from ChatGPT: income statement, balance sheet, VAT, customer and supplier invoices, bank, documents, payroll and year-end. ChatGPT can also prepare changes such as vouchers, bank matches, supplier payments and VAT returns. Each one waits for a person to approve it in Igdrasil, and payments and filings also need a signature.",
         "translations": {
           "sv": {
