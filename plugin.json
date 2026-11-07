@@ -98,6 +98,7 @@
         "commerce": false
       },
       "publication": {
+        "demo_recording_url": "https://drive.google.com/file/d/1CtZ-BEY0pyV6ZtcUWoqu7o6q0Ym2pAFg/view",
         "release_notes": "First release. Read the books of your Swedish companies in Igdrasil from ChatGPT: income statement, balance sheet, VAT, customer and supplier invoices, bank, documents, payroll and year-end. ChatGPT can also prepare changes such as vouchers, bank matches, supplier payments and VAT returns. Each one waits for a person to approve it in Igdrasil, and payments and filings also need a signature.",
         "translations": {
           "sv": {
