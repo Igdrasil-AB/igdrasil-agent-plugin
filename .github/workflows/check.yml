@@ -79,6 +79,13 @@ jobs:
               for field in ("logo", "composerIcon"):
                   if not interface.get(field) or not (ROOT / interface[field]).is_file():
                       problems.append(f"plugin.json interface.{field} must point at a file in the repo")
+              # OpenAI's final directory limits (developers.openai.com/plugins/deploy/submission-errors).
+              for field, limit in (("displayName", 30), ("shortDescription", 30), ("longDescription", 4000)):
+                  if len(interface.get(field, "")) > limit:
+                      problems.append(f"plugin.json interface.{field} is over {limit} characters")
+              for field in ("websiteURL", "supportURL", "privacyPolicyURL", "termsOfServiceURL"):
+                  if not str(interface.get(field, "")).startswith("https://"):
+                      problems.append(f"plugin.json interface.{field} must be an https URL")
 
               if len((ROOT / "README.md").read_text().split()) < 40:
                   problems.append("README.md must have at least 40 words")

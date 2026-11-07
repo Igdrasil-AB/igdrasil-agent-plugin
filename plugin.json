@@ -14,9 +14,11 @@
   "keywords": [
     "accounting",
     "bookkeeping",
+    "bokforing",
     "sweden",
     "bas",
     "vat",
+    "moms",
     "invoices",
     "reconciliation"
   ],
@@ -24,14 +26,16 @@
     "com.openai": {
       "interface": {
         "displayName": "Igdrasil Bokföring",
-        "shortDescription": "Ask about your Swedish books: results, VAT, open invoices, reconciliation.",
-        "longDescription": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
+        "shortDescription": "Swedish bookkeeping and VAT",
+        "longDescription": "Igdrasil Bokföring connects ChatGPT to your company's books in Igdrasil, the Swedish accounting service built on the BAS chart of accounts. Ask in Swedish or English and the answers come from your actual ledger.\n\n- Results and balances: profit and loss (resultaträkning), balance sheet and key figures for a month, quarter or year\n- VAT (moms): the declaration boxes and the amount to pay or reclaim for a period\n- Customer invoices: what is open, what is overdue and who owes you money\n- Bank reconciliation: which bank transactions are matched and which still need a voucher\n- Documents: receipts and supplier invoices, and the vouchers they belong to\n\nChatGPT can prepare a change, such as a voucher, but it only goes into a review queue. Nothing is booked until a person approves it in the Igdrasil app. The plugin never makes payments, files anything with Skatteverket or runs payroll.\n\nYou sign in with your Igdrasil account, and ChatGPT sees only the companies you have access to.",
         "developerName": "Igdrasil AB",
-        "category": "Productivity",
+        "category": "Finance",
         "capabilities": [
-          "Read"
+          "Read",
+          "Write"
         ],
         "websiteURL": "https://igdrasil.se",
+        "supportURL": "https://igdrasil.se/kontakt/",
         "privacyPolicyURL": "https://igdrasil.se/privacy",
         "termsOfServiceURL": "https://igdrasil.se/terms",
         "defaultPrompt": [
