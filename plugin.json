@@ -52,49 +52,31 @@
             {
               "description": "Monthly result for the signed-in company",
               "prompt": "Use Igdrasil Bokföring to summarise last month's result for my company.",
-              "tools_triggered": [
-                "igdrasil_list_companies",
-                "reports_income_statement",
-                "reports_kpis"
-              ],
+              "tools_triggered": "igdrasil_list_companies, reports_income_statement, reports_kpis",
               "expected_behavior": "Picks the reviewer's demo company (or asks which one if there are several) and reports revenue, costs and the result for the previous calendar month in SEK, using figures from the income statement."
             },
             {
               "description": "VAT position for a quarter",
               "prompt": "What is my VAT position for this quarter in Igdrasil?",
-              "tools_triggered": [
-                "igdrasil_list_companies",
-                "reports_vat_declaration"
-              ],
+              "tools_triggered": "igdrasil_list_companies, reports_vat_declaration",
               "expected_behavior": "Shows the VAT declaration boxes (rutor) for the current quarter and whether the company has VAT to pay or to reclaim, with the amount. Does not file anything."
             },
             {
               "description": "Open customer invoices",
               "prompt": "Which customers owe us money right now, and which invoices are overdue?",
-              "tools_triggered": [
-                "igdrasil_list_companies",
-                "customer_invoices_open_items"
-              ],
+              "tools_triggered": "igdrasil_list_companies, customer_invoices_open_items",
               "expected_behavior": "Lists open customer invoices with customer, amount and due date, and marks the ones past their due date."
             },
             {
               "description": "Bank balances and unmatched transactions",
               "prompt": "Show my bank balances in Igdrasil and how many bank transactions still need a voucher.",
-              "tools_triggered": [
-                "igdrasil_list_companies",
-                "bank_accounts_balance",
-                "bank_matches_summary"
-              ],
+              "tools_triggered": "igdrasil_list_companies, bank_accounts_balance, bank_matches_summary",
               "expected_behavior": "Shows the balance of each bank account and how many bank transactions are not yet matched to a voucher."
             },
             {
               "description": "Prepare a voucher for human approval",
               "prompt": "Prepare a voucher in Igdrasil that moves 1000 SEK from bank account 1930 to cash account 1910, dated today. Don't book it.",
-              "tools_triggered": [
-                "igdrasil_list_companies",
-                "ledger_post",
-                "staged_operations_show"
-              ],
+              "tools_triggered": "igdrasil_list_companies, ledger_post, staged_operations_show",
               "expected_behavior": "Stages a draft voucher (debit 1910, credit 1930, 1000 SEK) and shows its lines. Says that it is waiting for a person to approve it in the Igdrasil app. The ledger itself does not change."
             }
           ],
