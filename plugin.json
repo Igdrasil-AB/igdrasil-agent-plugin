@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "igdrasil-bokforing",
   "version": "0.1.0",
-  "description": "Swedish BAS accounting from Igdrasil: reports, VAT, invoices, bank, documents, payroll and year-end. The assistant can read the books and prepare changes such as vouchers, supplier payments and VAT returns. Nothing is booked, paid or filed until a person approves it in the Igdrasil app, and payments and filings also need a signature.",
+  "description": "Swedish BAS bookkeeping from Igdrasil: ledger and reports, invoices, bank, documents, VAT, payroll and year-end. The assistant can read the books and prepare changes such as vouchers, supplier payments and VAT returns. Nothing is booked, paid or filed until a person approves it in the Igdrasil app, and payments and filings also need a signature.",
   "author": {
     "name": "Igdrasil AB",
     "email": "erik@igdrasil.se",
@@ -26,7 +26,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Igdrasil Bokföring",
-        "shortDescription": "Swedish bookkeeping and VAT",
+        "shortDescription": "Swedish bookkeeping",
         "longDescription": "Igdrasil Bokföring connects ChatGPT to your company's books in Igdrasil, the Swedish accounting service built on the BAS chart of accounts. Ask in Swedish or English and the answers come from your actual ledger.\n\nWhat you can ask about:\n- Results and balances: profit and loss (resultaträkning), balance sheet and key figures for a month, quarter or year\n- VAT (moms): the declaration boxes and the amount to pay or reclaim for a period\n- Customer and supplier invoices: what is open, what is overdue and who owes you money\n- Bank: balances, transactions and which ones still need a voucher\n- Documents: receipts and supplier invoices, and the vouchers they belong to\n- Payroll, fixed assets, accruals, year-end and SIE exports\n\nChatGPT can also prepare changes: vouchers and corrections, bank matches, supplier payments, VAT returns and employer declarations. Each one goes into a review queue in Igdrasil. Nothing is booked until a person approves it there, and payments and filings to Skatteverket also have to be signed by a person. ChatGPT cannot approve, pay or file anything on its own.\n\nYou sign in with your Igdrasil account, and ChatGPT sees only the companies you have access to.",
         "developerName": "Igdrasil AB",
         "category": "Finance",
@@ -101,7 +101,7 @@
         "release_notes": "First release. Read the books of your Swedish companies in Igdrasil from ChatGPT: income statement, balance sheet, VAT, customer and supplier invoices, bank, documents, payroll and year-end. ChatGPT can also prepare changes such as vouchers, bank matches, supplier payments and VAT returns. Each one waits for a person to approve it in Igdrasil, and payments and filings also need a signature.",
         "translations": {
           "sv": {
-            "subtitle": "Svensk bokföring och moms",
+            "subtitle": "Svensk bokföring",
             "description": "Igdrasil Bokföring kopplar ChatGPT till ditt företags bokföring i Igdrasil, en svensk redovisningstjänst byggd på BAS-kontoplanen. Fråga på svenska eller engelska, så kommer svaren direkt från din huvudbok.\n\nDet här kan du fråga om:\n- Resultat och balans: resultaträkning, balansräkning och nyckeltal för en månad, ett kvartal eller ett år\n- Moms: rutorna i momsdeklarationen och beloppet att betala eller få tillbaka för en period\n- Kund- och leverantörsfakturor: vad som är obetalt, vad som är förfallet och vem som är skyldig dig pengar\n- Bank: saldon, transaktioner och vilka som fortfarande saknar verifikation\n- Underlag: kvitton och leverantörsfakturor, och vilka verifikationer de hör till\n- Lön, anläggningstillgångar, periodiseringar, bokslut och SIE-export\n\nChatGPT kan också förbereda ändringar: verifikationer och rättelser, bankmatchningar, leverantörsbetalningar, momsdeklarationer och arbetsgivardeklarationer. Varje ändring hamnar i en granskningskö i Igdrasil. Inget bokförs förrän en person godkänner det där, och betalningar och inlämningar till Skatteverket måste dessutom signeras av en person. ChatGPT kan aldrig själv godkänna, betala eller lämna in något.\n\nDu loggar in med ditt Igdrasil-konto, och ChatGPT ser bara de företag du har behörighet till."
           }
         }
