@@ -18,11 +18,12 @@ itself, so the URL is the only configuration a client needs.
 ## The boundary we promise
 
 A client connected through this plugin can read data and stage operations for
-a person to review. It must **not** be able to:
+a person to review, including payments and VAT or tax filings. It must **not**
+be able to:
 
-- apply a staged operation, or post, reverse or close books
-- transfer money, pay invoices or run payroll
-- file VAT or tax returns
+- approve or apply a staged operation, or post, reverse or close books
+- transfer money or pay invoices without a person approving and signing
+- file VAT or tax returns without a person approving and signing
 - delete records
 
 If you find a way to do any of these through this plugin, that is a defect in

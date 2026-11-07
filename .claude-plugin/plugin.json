@@ -2,7 +2,7 @@
   "name": "igdrasil-bokforing",
   "displayName": "Igdrasil Bokföring",
   "version": "0.1.0",
-  "description": "Swedish BAS accounting from Igdrasil: read reports, VAT, invoices, documents and bank reconciliation. Changes can be prepared for review; only a person applies them in the Igdrasil app. No payments, filings or payroll.",
+  "description": "Swedish BAS accounting from Igdrasil: reports, VAT, invoices, bank, documents, payroll and year-end. The assistant can read the books and prepare changes such as vouchers, supplier payments and VAT returns. Nothing is booked, paid or filed until a person approves it in the Igdrasil app, and payments and filings also need a signature.",
   "author": {
     "name": "Igdrasil AB",
     "email": "erik@igdrasil.se",

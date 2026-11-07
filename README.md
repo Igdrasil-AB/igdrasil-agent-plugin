@@ -16,16 +16,19 @@ When you connect the hosted Igdrasil MCP server, your AI client can:
   balance sheet, the VAT position (rutor, amount to pay or reclaim), open
   customer invoices, accounting documents, bank balances and the
   reconciliation status.
-- **Prepare** some changes, such as a proposed journal entry or a bank match,
-  as *staged operations*. A staged operation changes nothing in your books. A
-  person has to review it and apply it in the
-  [Igdrasil app](https://accounting.igdrasil.se).
+- **Prepare** changes as *staged operations*: journal entries and
+  corrections, bank matches, supplier payments, VAT returns, employer
+  declarations and more. A staged operation changes nothing in your books. A
+  person has to approve it in the [Igdrasil app](https://accounting.igdrasil.se),
+  and payments and filings must also be signed by a person.
 
 ## What it cannot do
 
-AI clients connected through this plugin cannot apply changes, move money, pay
-invoices, run payroll, file tax or VAT returns, or delete records. The server
-enforces this, and the skills also refuse such requests.
+AI clients connected through this plugin cannot carry out a change on their
+own. They cannot approve or apply a staged operation, book or delete records,
+move money, pay invoices, or file tax or VAT returns. The server enforces this:
+it applies a staged operation only after it finds the approval a person recorded
+in the Igdrasil app.
 
 ## Install
 
